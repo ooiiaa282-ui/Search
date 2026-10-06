@@ -1,0 +1,201 @@
+/* Variables */
+$align-items: center;
+$border-radius: 9999px;
+$box-sizing: border-box;
+$display: flex;
+$flex-direction: column;
+$font-family: Roboto, Helvetica, Arial, sans-serif;
+$font-size: 13px;
+$gap-10: 10px;
+$gap-30: 30px;
+$height: 100vh;
+$justify-content: flex-start;
+$line-height: 24px;
+$outline: none;
+$text-decoration: none;
+
+/* Centers vertically */
+/* Navigation bar styles */
+nav {
+    display: $display;
+  /* centers vertically (cross axis) */
+  align-items: $align-items;
+  /* pushes items right (main axis) */
+  justify-content: flex-end;
+  /* space between items */
+  gap: 15px;
+  /* top/bottom, left/right */
+  padding: 10px 20px;
+  /* sets the width of the nav bar to be responsive */
+  width: 100vw;
+  /* calculates the width without the padding */
+  box-sizing: $box-sizing;
+}
+
+/* Navigation link styles */
+.nav-link {
+  /*sets text color to black at 87% opacity */
+  color: rgba(0, 0, 0, 0.87);
+  /* sets font family with fallbacks */
+  font-family: $font-family;
+  /* sets font size to 13px */
+  font-size: $font-size;
+  /* sets line height */
+  line-height: $line-height;
+  /* sets text decoration */
+  text-decoration: $text-decoration;
+  /* sets cursor */
+  cursor: pointer;
+}
+
+/* Styles a nav_link when hovered over */
+.nav-link:hover {
+  /* underlines */
+  text-decoration: underline;
+}
+
+/* Form styles */
+.search-form {
+    display: $display;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: $flex-direction;
+  /*  Centers horizontally (cross axis) */
+  align-items: $align-items;
+  /* space between items */
+  gap: $gap-30;
+}
+
+/* Search input styles */
+.search-input {
+  width: 100%;
+  max-width: 584px;
+  height: 9%; /* Increases to 46px or 48px depending on focus/hover states */
+  border-radius: $border-radius;
+  box-sizing: $box-sizing;
+  outline: $outline;
+}
+.search-input:focus { /* Increases to 46px or 48px depending on focus/hover states */
+  outline: $outline;
+  /* border color light grey */
+  border: 1px solid #dadce0;
+}
+
+/* Submit input styles */
+.search-submit {
+  /* sets background color as google light grey */
+  background-color: #f8f9fa;
+  /* sets font family with fallbacks */
+  font-family: $font-family;
+  /* sets font size to 13px */
+  font-size: $font-size;
+  /* sets line height */
+  line-height: $line-height;
+  /* sets border */
+  border: 0;
+  /* round the corners of the input */
+  border-radius: 5px;
+}
+
+/* hover effect for submit input */
+.search-submit:hover {
+  /* changes the background color when hovered */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* body style for advanced search */
+body {
+    display: $display;
+    /* flex-direction: column; */
+  flex-direction: $flex-direction;
+  height: $height;
+  gap: 17px;
+  margin: 0;
+}
+/* body style for the rest */
+.display-flex {
+    display: $display;
+    /* Centers horizontally (cross axis) */
+    align-items: $align-items;
+    /* flex-direction: column; */
+  flex-direction: $flex-direction;
+  height: $height;
+  margin: 0;
+  gap: 17px;
+}
+
+/* div1 class style */
+.div1 {
+  display: $display;
+  flex-direction: $flex-direction;
+  height: $height;
+  /* Packs towards the start */
+  justify-content: $justify-content;
+  padding: 0 20px;
+  gap: $gap-30;
+}
+
+.div2 {
+  display: $display;
+  /* Packs towards the start */
+  justify-content: $justify-content;
+  gap: $gap-10;
+}
+
+label {
+  width: 150px;
+}
+
+.advanced-search-fields {
+  width: 340px;
+  height: 40px;
+}
+
+/* Styles submit button for advanced search */
+input[value="Advanced Search"] {
+  background-color: #336ef3;
+  /* sets text color to white */
+  color: white;
+  /* round the corners of the input */
+  border-radius: $border-radius;
+  /* height of the button */
+  height: 40px;
+  /* padding inside the button */
+  padding: 0 15px;
+  /* sets font family with fallbacks */
+  font-family: $font-family;
+  /* sets line height */
+  line-height: $line-height;
+  /* sets text decoration */
+  text-decoration: $text-decoration;
+}
+
+.title {
+    display: $display;
+  justify-content: center;
+  /* Centers vertically (cross axis) */
+  align-items: $align-items;
+  height: 20vh;
+}
+
+p {
+  font-size: 92px;
+  font-family: $font-family;
+  /*sets spacing between letters to -1px */
+  letter-spacing: -2px;
+}
+
+.search-buttons {
+    display: $display;
+  gap: $gap-10;
+  /* centers the buttons horizontally */
+  justify-content: center;
+}
+
+.container {
+    display: $display;
+    width: 60vw;
+    flex-direction: $flex-direction;
+    /* Centers horizontally (cross axis) */
+    align-items: $align-items;
+}
